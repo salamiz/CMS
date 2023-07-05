@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="container">
+        <div class="col-md-10">
+            <table class="table table-bordered text-center text-white">
+                <thead class="bg-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>Author</th>
+                        <th>Approved Comments</th>
+                        <th>Date</th>
+                        <th>Comment Body</th>
+                    </tr>
+                </thead>
+
+                <tbody class="text-dark">
+                    {{#each comments}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td style="width: auto;">{{user.firstName}} {{user.lastName}}</td>
+                        <td>{{commentIsApproved}}</td>
+                        <td>{{date}}</td>
+                        <td>{{body}}</td>
+                        <td>
+                            <a href="/admin/comment/{{id}}/edit" class="btn btn-primary">Edit</a>
+                        </td>
+                        <td>
+                            <form action="/admin/comment/{{id}}?_newMethod=DELETE" method="POST">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
