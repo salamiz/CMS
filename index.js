@@ -5,6 +5,7 @@
 */
 
 // Importing the required modules
+require('dotenv').config();
 const express = require('express'); // JS framework
 const mongoose = require('mongoose'); // Node.js based ODM (object data modeling) libary for MongoDB database
 const path = require('path') // node.js module used to find the right paths to access and manage files in project directory
@@ -19,6 +20,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override'); // import method-override package
 const {selectOption} = require('./config/customFunctions'); // import the customFunctions file
 const fileUpload = require('express-fileupload'); // import express-fileupload package
+
 
 
 

@@ -1,5 +1,7 @@
+
+const dbConnectionString = process.env.MONGODB_CONNECTION_STRING;
 module.exports = {
-    mongoDbUrl: 'mongodb://127.0.0.1:27017/cms_salamiz',
+    mongoDbUrl: dbConnectionString,
     PORT: process.env.PORT || 3000,
     globalVariables: (req, res, next) => {
         res.locals.success_message = req.flash('success-message');
