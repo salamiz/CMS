@@ -175,5 +175,5 @@ module.exports = {
             .then(comments => {
                 res.render('admin/comments/index', {comments: comments});
             });
-    }
+    },
 };

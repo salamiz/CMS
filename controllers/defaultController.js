@@ -115,7 +115,7 @@ module.exports = {
                 post.comments.push(newComment);
                 post.save().then(savedPost => {
                     newComment.save().then(savedComment => {
-                        req.flash('success-message', 'Your comment was submitted for review.');
+                        req.flash('success-message', 'Your comment was submitted.');
                         res.redirect(`/post/${post._id}`);
                     });
                 });
