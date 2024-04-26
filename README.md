@@ -1,4 +1,4 @@
-Sure, here's how the content would look formatted as a README.md file:# Full Stack Content Management System (CMS)
+# Full Stack Content Management System (CMS)
 
 This project is a comprehensive Full Stack Content Management System designed to provide an intuitive and efficient way for users to manage content. Built with Node.js, Express.js, and MongoDB, this CMS offers a wide range of features aimed at facilitating user registration, content creation, and management.
 
